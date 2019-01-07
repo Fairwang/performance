@@ -3,7 +3,7 @@
 from performance.app import App
 import time
 import os
-class Manager():
+class StartTime():
     def __init__(self,count,App):
         self.count =count
         self.app=App
@@ -27,5 +27,5 @@ class Manager():
 # adb =os.popen("adb shell am start -W -n com.eg.android.AlipayGphone/com.eg.android.AlipayGphone.AlipayLogin ")
 
 app=App("com.eg.android.AlipayGphone","com.eg.android.AlipayGphone.AlipayLogin")
-m=Manager(3,app)
+m=StartTime(3,app)
 m.run()

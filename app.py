@@ -9,11 +9,11 @@ class App():
         self.startTime=""
 
     def startApp(self):
-        cmd="adb shell am start -W -n"+self.pagename+"/"+self.firstActivty
+        cmd="adb shell am start -W -n "+self.pagename+"/"+self.firstActivty
         self.content=os.popen(cmd)
 
     def stopApp(self):
-        cmd="adb shell am force-stop"+self.pagename
+        cmd="adb shell am force-stop "+self.pagename
         os.popen(cmd)
         print "hh"
 
