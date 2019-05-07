@@ -1,6 +1,6 @@
 #!user/bin/env
 # -*-coding : utf-8 -*-
-from performance.app import App
+from performance.app_start import App
 import time
 import os
 class StartTime():
@@ -26,6 +26,7 @@ class StartTime():
 
 # adb =os.popen("adb shell am start -W -n com.eg.android.AlipayGphone/com.eg.android.AlipayGphone.AlipayLogin ")
 
-app=App("com.eg.android.AlipayGphone","com.eg.android.AlipayGphone.AlipayLogin")
+# app=App("com.eg.android.AlipayGphone","com.eg.android.AlipayGphone.AlipayLogin")
+app=App('com.example.wallet.dev','com.example.wallet.core.main.SplashActivity')
 m=StartTime(3,app)
 m.run()

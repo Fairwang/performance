@@ -26,7 +26,8 @@ class cpu(object):
         self.file.close()
 
 counts=5
-pagename="com.eg.android.AlipayGphone"
+pagename="com.hongshan.wallet.dev"
+
 if __name__=="__main__":
     contorller=cpu(counts,pagename)
     contorller.run()
